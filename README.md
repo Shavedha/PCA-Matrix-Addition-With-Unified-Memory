@@ -477,11 +477,18 @@ int main(int argc, char **argv)
 ```
 ##  OUTPUT
 ### With Memset
-<img width="558" alt="image" src="https://github.com/Shavedha/PCA-Matrix-Addition-With-Unified-Memory/assets/93427376/bf71115c-6de5-41ff-8d0e-19a51e2aa40d">
+/tmp/tmpxpshc4pp/d9267daa-6f3e-4b7f-9554-23cdb0e748b4.out Starting using Device 0: Tesla T4
+Matrix size: nx 4096 ny 4096
+initialization: 	 1.018598 sec
+sumMatrix on host:	 0.052507 sec
+sumMatrix on gpu :	 0.058136 sec <<<(128,128), (32,32)>>> 
 
 ### Without Memset
-<img width="596" alt="image" src="https://github.com/Shavedha/PCA-Matrix-Addition-With-Unified-Memory/assets/93427376/b645d4bf-99af-47ae-9b51-fbdc0cf3ca39">
-
+/tmp/tmpb2j6g2ip/89436445-9d95-4c83-a85c-cd3236140ff8.out Starting using Device 0: Tesla T4
+Matrix size: nx 4096 ny 4096
+initialization: 	 0.824945 sec
+sumMatrix on host:	 0.094615 sec
+sumMatrix on gpu :	 0.057049 sec <<<(128,128), (32,32)>>>
 ## RESULT
 Thus Matrix addition with unified memory is done successfully.
 
